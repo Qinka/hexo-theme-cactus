@@ -36,9 +36,9 @@ body
   @extend $base-style
 
 .content
+  flex-direction: column
   position: relative
   display: flex
-  flex-direction: column
   min-height: 100%
   overflow-wrap: break-word
 
@@ -80,6 +80,10 @@ body
   h6
     a:hover
       underline(6px, $color-link)
+
+  &.content-bil
+    flex-direction: row
+
 
 @media (min-width: 540px)
   .image-wrap
@@ -181,7 +185,7 @@ code
     &:after
       clear: both
 
-  &:hover 
+  &:hover
     .btn-copy
       opacity: 1
 
