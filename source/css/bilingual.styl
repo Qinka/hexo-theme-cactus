@@ -1,20 +1,30 @@
 @import "_variables"
 
+.content .content-bil
+    @media mq-normal
+        flex-direction: row
+    @media mq-tablet
+        flex-direction: row
+    @media mq-mobile
+        flex-direction: column
+
 .article-bil-column
     display: inline
     float: left
-    @media (min-width: 500px)
+    @media mq-normal
         width: calc(50% - 10px)
         &.bil-first-column
             padding: 0 10px 0 0
         &.bil-second-column
             padding: 0 0 0 10px
-    @media all
+    @media mq-tablet
         width: calc(50% - 10px)
         &.bil-first-column
             padding: 0 10px 0 0
         &.bil-second-column
             padding: 0 0 0 10px
+    @media mq-mobile
+        width: 100%
     // @media mq-normal
     //     width: calc(50% - 10px)
     //     &.bil-first-column
