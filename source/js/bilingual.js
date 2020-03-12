@@ -2,9 +2,8 @@ var leftParagraphs = $('.content-bil .bil-first-column').find('p, h1, h2, h3, h4
 var rightParagraphs = $('.content-bil .bil-second-column').find('p, h1, h2, h3, h4, h5, h6');
 
 var bil_align = () => {
-
     /* 如果页面宽度大于 800px，进行段落对齐，见下一节 */
-    if(window.matchMedia('(min-width: 800px)').matches) {
+    if(window.matchMedia('screen and (min-width: 480px)').matches) {
         leftParagraphs.each((i, thiz) => {
             if (i < rightParagraphs.length) {
                 var left = $(thiz);
@@ -28,7 +27,6 @@ $(window).resize(() => {
     if(resizeHandler) {
         clearTimeout(resizeHandler);
     }
-
     resizeHandler = setTimeout(bil_align, 50);
 });
 if($('.content img').length) {
