@@ -47,7 +47,7 @@ A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal websi
     theme: cactus
     ```
     See below for more information on how to customize this theme.
-    
+
 3. Create pages and articles with the `hexo new [layout] <title>` command.
     For example, to create an "about me" page, run:
     ```sh
@@ -59,7 +59,7 @@ A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal websi
     $ hexo new post "hello world"
     ```
     and add some interesting content in `source/_posts/hello-world.md`.
-    
+
 4. Run: `hexo generate` and `hexo server`
 
 5. [Publish your blog](https://hexo.io/docs/one-command-deployment.html)!
@@ -193,7 +193,7 @@ Currently, the theme is delivered with support for:
 - English (en), default
 - Brazilian Portuguese (pt-br)
 - Catalan (ca)
-- Chinese (Simplified, PRC) (zh-CN)
+- Chinese (Simplified, PRC) (cn)
 - Dutch (nl)
 - French (fr)
 - Italian (it)
@@ -278,7 +278,7 @@ date: 2017-12-24 23:29:53
 tags:
 - Foo
 - Bar
-categories: 
+categories:
 - Baz
 ---
 
@@ -300,7 +300,7 @@ Similarly, you can create a page with an overview of all categories by running:
 $ hexo new page categories
 ```
 
-and adding `type: categories` to the front-matter of `source/categories/index.md`. 
+and adding `type: categories` to the front-matter of `source/categories/index.md`.
 
 Finally, don't forget to create a link to these pages, for example in the navigation menu:
 

@@ -27,10 +27,16 @@ $(window).resize(() => {
     if(resizeHandler) {
         clearTimeout(resizeHandler);
     }
-    resizeHandler = setTimeout(bil_align, 50);
+    resizeHandler = setTimeout(bil_align, 500);
 });
 if($('.content img').length) {
     $('.content img').load(bil_align);
 } else {
-    $(bil_align);
+   $(bil_align);
+}
+
+if(document.fonts) {
+    document.fonts.ready.then(function () {
+        bil_align();
+    });
 }

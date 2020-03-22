@@ -1,6 +1,6 @@
 {
-  "name": "hexo-theme-cactus",
-  "version": "3.0.0",
+  "name": "hexo-theme-qinka",
+  "version": "0.1",
   "description": "A responsive, clean and simple theme for Hexo.",
   "main": "index.js",
   "scripts": {
@@ -10,19 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/probberechts/cactus-dark.git"
+    "url": "git+https://github.com/Qinka/hexo-theme-qinka.git"
   },
   "keywords": [
     "Hexo",
     "Theme",
-    "Cactus"
+    "Qinka"
   ],
-  "author": "Pieter Robberechts",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/probberechts/cactus-dark/issues"
-  },
-  "homepage": "https://github.com/probberechts/cactus-dark#readme",
   "devDependencies": {
     "del": "*",
     "gulp": "^4.0.0",
