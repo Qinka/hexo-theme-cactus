@@ -29,8 +29,9 @@ $(window).resize(() => {
     }
     resizeHandler = setTimeout(bil_align, 500);
 });
-if($('.content img').length) {
-    $('.content img').load(bil_align);
+
+if($('.content-bil img').length) {
+    $('.content-bil img').ready(bil_align);
 } else {
    $(bil_align);
 }
