@@ -55,7 +55,10 @@ const column_hidden = (i) => {
 };
 
 const when_ready = () => {
-    if (col_state == null) {
+    if (_col_hid_pre_state != undefined) {
+        col_state = _col_hid_pre_state;
+    }
+    else if (col_state == null) {
         if (document.location.search == '?left') {
             col_state = 1;
         } else if (document.location.search == '?right') {
