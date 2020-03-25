@@ -6,6 +6,9 @@ nav:
   category: Category
   projects: Projects
   search: Search
+  sponsor: Sponsor
+  publication: Publication
+  project: Project
 
 footer:
   copyright: Copyright

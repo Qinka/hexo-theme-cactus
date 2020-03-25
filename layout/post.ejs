@@ -11,8 +11,23 @@
     </div>
   </header>
   <%- partial('_partial/post/gallery') %>
-  <div class="content" itemprop="articleBody">
-    <%- page.content %>
-  </div>
+  <% page.column = page.content.split("<!--second-column-->")  %>
+  <% if (page.column.length > 1) { %>
+    <div class="content content-bil" itemprop="articleBody">
+      <div class="article-bil-column bil-left-column" id="the-l-column">
+        <div id="the-l-btn"><i class="fa fa-backward" onclick="column_hidden(-1)"></i></div>
+          <%- page.column[0] %>
+      </div>
+      <div class="article-bil-column bil-right-column" id="the-r-column">
+        <div id="the-r-btn"><i class="fa fa-forward"  onclick="column_hidden( 1)"></i></div>
+          <%- page.column[1] %>
+      </div>
+      <%- css('css/bilingual') %>
+    </div>
+  <% } else { %>
+    <div class="content" itemprop="articleBody">
+      <%- page.column[0] %>
+    </div>
+  <% } %>
 </article>
 <%- partial('_partial/comments') %>

@@ -39,27 +39,29 @@
     color: lighten($color-meta, 20%)
 
   .footer-left
-    height: 20px
+    height: auto
     vertical-align: middle
     line-height: 20px
 
-  .footer-left-b
-    height: 20px
-    vertical-align: middle
+  .footer-center
+    height: auto
     line-height: 20px
+    vertical-align: middle
 
-  .footer-right-b
-    height: 20px
-    vertical-align: middle
+  .footer-sponor
+    height: auto
     line-height: 20px
-    img
-      height: 19px
-    span
-      vertical-align: super
+    vertical-align: middle
+
+
+  img
+    height: 20px
+  span
+    vertical-align: super
+
 
 @media (min-width: 39rem)
   #footer
-    display: flex
     flex-flow: row wrap
     justify-content: space-between
     align-items: center
@@ -70,8 +72,9 @@
       align-self: flex-start
       margin-right: 20px
 
-    .footer-left-b
-      align-self: flex-end
+    .footer-center
+      align-self: flex-start
+      margin-right: 20px
 
-    .footer-right
-      align-self: flex-end
+    .footer-sponor
+      margin: auto

@@ -100,11 +100,11 @@ page_width: 60
 ##############################################################################
 
 # Turn your web pages into graph objects (see http://ogp.me).
-open_graph:
-  fb_app_id:
-  fb_admins:
-  twitter_id:
-  google_plus:
+# open_graph:
+#   fb_app_id:
+#   fb_admins:
+#   twitter_id:
+#   google_plus:
 
 
 ##############################################################################

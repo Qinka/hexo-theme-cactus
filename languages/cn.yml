@@ -6,6 +6,9 @@ nav:
   tag: 标签
   category: 分类
   search: 搜索
+  sponsor: 赞助者
+  publication: 出版物
+  project: 项目
 
 footer:
   copyright: Copyright

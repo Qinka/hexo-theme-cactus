@@ -102,6 +102,6 @@
     </script>
 <% } %>
 <!-- bil -->
-<% if (page.column != undefined) { %>
+<% if (page.column != undefined && page.column.length > 1) { %>
   <%- js('js/bilingual') %>
 <% } %>

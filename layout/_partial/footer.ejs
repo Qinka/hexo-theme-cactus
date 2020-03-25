@@ -1,26 +1,5 @@
 <footer id="footer">
   <div class="footer-left">
-    <%= __('footer.copyright') %> &copy; <%= new Date().getFullYear() %> <%= config.author || config.title %>
-    <% if (config.mail) { %>
-      &lt;<a href="mailto:<%- config.mail %>"><%- config.mail %></a>&gt;
-    <% } %>
-  </div>
-  <% if (config.icp) { %>
-    <div class="footer-left-b">
-      <a href="<%- config.icp.url %>" target="_blank"> <%- config.icp.id %> </a>
-    </div>
-  <% } %>
-  <% if (config.supportlink) { %>
-    <div class="footer-right-b">
-      <% if(config.supportlink.pre) { %>
-        <span> <%- config.supportlink.pre %> </span>
-      <% } %>
-      <a href="<%- config.supportlink.url %>">
-        <img src="<%- url_for(config.supportlink.img) %>"/>
-      </a>
-    </div>
-  <% } %>
-  <div class="footer-right">
     <nav>
       <ul>
         <% for (var i in theme.nav) { %>
@@ -29,4 +8,25 @@
       </ul>
     </nav>
   </div>
+  <div class="footer-right">
+    <%= __('footer.copyright') %> &copy; <%= new Date().getFullYear() %> <%= config.author || config.title %>
+    <% if (config.mail) { %>
+      &lt;<a href="mailto:<%- config.mail %>"><%- config.mail %></a>&gt;
+    <% } %>
+  </div>
+  <% if (config.icp) { %>
+    <div class="footer-center">
+      <a href="<%- config.icp.url %>" target="_blank"> <%- config.icp.id %> </a>
+    </div>
+  <% } %>
+  <% if (config.supportlink) { %>
+    <div class="footer-sponor">
+      <% if(config.supportlink.pre) { %>
+        <span> <%- config.supportlink.pre %> </span>
+      <% } %>
+      <a href="<%- config.supportlink.url %>">
+        <img src="<%- url_for(config.supportlink.img) %>"/>
+      </a>
+    </div>
+  <% } %>
 </footer>
