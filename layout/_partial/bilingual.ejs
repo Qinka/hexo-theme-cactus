@@ -1,25 +1,25 @@
 <% if(page.onecolumn) { %>
-    <% _col_hid_d = 3; %>
-    <script> const _col_hid_pre_state = <%- page.onecolumn == "right" ? -1 : 1 %>; </script>
-  <% } else { %>
-    <% _col_hid_d = 1; %>
-    <script> const _col_hid_pre_state = undefined; </script>
-  <% } %>
-  <% page.column = page.content.split("<!--second-column-->") %>
-  <% if (page.column.length > 1) { %>
-    <div class="content content-bil" itemprop="articleBody">
-      <div class="article-bil-column bil-left-column"  id="the-l-column" style="display: none;">
-        <div id="the-l-btn"><i class="fa fa-backward" onclick="column_hidden(<%- -_col_hid_d %>)"></i></div>
-          <%- page.column[0] %>
-      </div>
-      <div class="article-bil-column bil-right-column" id="the-r-column" style="display: none;">
-        <div id="the-r-btn"><i class="fa fa-forward"  onclick="column_hidden(<%- +_col_hid_d %>)"></i></div>
-          <%- page.column[1] %>
-      </div>
-      <%- css('css/bilingual') %>
+  <% _col_hid_d = 3; %>
+  <script> const _col_hid_pre_state = <%- page.onecolumn == "right" ? -1 : 1 %>; </script>
+<% } else { %>
+  <% _col_hid_d = 1; %>
+  <script> const _col_hid_pre_state = undefined; </script>
+<% } %>
+<% page.column = page.content.split("<!--second-column-->") %>
+<% if (page.column.length > 1) { %>
+  <div class="content content-bil" itemprop="articleBody">
+    <div class="article-bil-column bil-left-column"  id="the-l-column" style="display: none;">
+      <div id="the-l-btn"><i class="fa fa-backward" onclick="column_hidden(<%- -_col_hid_d %>)"></i></div>
+        <%- page.column[0] %>
     </div>
-  <% } else { %>
-    <div class="content" itemprop="articleBody">
-      <%- page.column[0] %>
+    <div class="article-bil-column bil-right-column" id="the-r-column" style="display: none;">
+      <div id="the-r-btn"><i class="fa fa-forward"  onclick="column_hidden(<%- +_col_hid_d %>)"></i></div>
+        <%- page.column[1] %>
     </div>
-  <% } %>
+    <%- css('css/bilingual') %>
+  </div>
+<% } else { %>
+  <div class="content" itemprop="articleBody">
+    <%- page.column[0] %>
+  </div>
+<% } %>
