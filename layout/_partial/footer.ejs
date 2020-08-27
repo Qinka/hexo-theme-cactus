@@ -2,8 +2,8 @@
   <div class="footer-left">
     <nav>
       <ul>
-        <% for (var i in theme.nav) { %>
-          <li><a href="<%- url_for(theme.nav[i]) %>"><%= __('nav.'+i).replace("nav.", "") %></a></li>
+        <% for (var i in config.nav) { %>
+          <li><a href="<%- url_for(config.nav[i]) %>"><%= __('nav.'+i).replace("nav.", "") %></a></li>
         <% } %>
       </ul>
     </nav>
